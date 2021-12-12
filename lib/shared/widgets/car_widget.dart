@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/models/car.dart';
 import '/shared/styles/colors.dart';
 
-Widget buildCar(Car car, [int index]) {
+Widget buildCar(Car car, [int? index]) {
   return Container(
     decoration: BoxDecoration(
       color: Colors.white,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core.dart';
 
-Widget buildDealer(Dealer dealer, [int index]) {
+Widget buildDealer(Dealer dealer, [int? index]) {
   return Container(
     decoration: BoxDecoration(
       color: Colors.white,

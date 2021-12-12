@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class CarNameWidget extends StatelessWidget {
   const CarNameWidget({
-    Key key,
-    @required this.model,
-    @required this.brand,
+    Key? key,
+    required this.model,
+    required this.brand,
   }) : super(key: key);
 
   final String model;

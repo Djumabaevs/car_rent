@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 class CarImagesWidget extends StatelessWidget {
   const CarImagesWidget({
-    Key key,
-    @required this.images,
+    Key? key,
+    required this.images,
     this.isExpanded = false,
   }) : super(key: key);
 
