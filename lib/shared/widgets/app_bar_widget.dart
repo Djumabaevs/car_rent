@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({
     this.isBackButton = true,
-    required this.title,
+    this.title = '',
     required this.titlePadding,
     required this.actions,
     Key? key,

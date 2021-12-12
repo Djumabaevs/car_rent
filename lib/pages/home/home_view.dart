@@ -44,15 +44,15 @@ class HomeView extends GetView<HomeController> {
         children: [
           _buildAppBar(),
           SizedBox(height: 22),
-          CarImagesWidget(images: controller.displayCar.images),
+          CarImagesWidget(images: controller.displayCar!.images),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CarNameWidget(
-                  model: controller.displayCar.model,
-                  brand: controller.displayCar.brand,
+                  model: controller.displayCar!.model,
+                  brand: controller.displayCar!.brand,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15.0),
@@ -121,7 +121,7 @@ class HomeView extends GetView<HomeController> {
                     animationType: BadgeAnimationType.scale,
                     padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2.2),
                     borderSide: BorderSide(color: Colors.white, width: 2),
-                    badgeColor: Colors.yellow[600],
+                    badgeColor: Colors.yellow,
                     borderRadius: BorderRadius.circular(13),
                     elevation: 0,
                     badgeContent: Text(

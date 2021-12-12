@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import '../core.dart';
 
 class MainView extends GetView<MainController> {
-  MainView({Key key}) : super(key: key);
+  MainView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

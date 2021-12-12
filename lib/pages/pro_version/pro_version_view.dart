@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../../core.dart';
 
 class ProVersionView extends StatelessWidget {
-  const ProVersionView({this.isBackAvailable = false, Key key})
+  const ProVersionView({this.isBackAvailable = false, Key? key})
       : super(key: key);
   final bool isBackAvailable;
 
@@ -19,41 +19,43 @@ class ProVersionView extends StatelessWidget {
               AppBarWidget(
                 title: "Pro Version",
                 isBackButton: false,
+                titlePadding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+                actions: [],
               ),
               Expanded(
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(
+                      const Text(
                         "Support Us by Buying Template :D",
                         style: TextStyle(
                             fontSize: 19, fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(height: 17),
-                      Text(
+                      const SizedBox(height: 17),
+                      const Text(
                         "The link at README.md file.",
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       !isBackAvailable
                           ? Container()
                           : Column(
                               children: [
-                                SizedBox(height: 50),
+                                const SizedBox(height: 50),
                                 OutlinedButton.icon(
                                   onPressed: () => Get.back(),
                                   style: ButtonStyle(
                                       side: MaterialStateProperty.all(
                                           BorderSide(
                                               color: kPrimaryColor, width: 1))),
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_back_ios,
                                     size: 23,
                                   ),
-                                  label: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        vertical: 10.0),
+                                  label: const Padding(
+                                    padding:
+                                        EdgeInsets.symmetric(vertical: 10.0),
                                     child: Text(
                                       "Back",
                                       style: TextStyle(fontSize: 20),

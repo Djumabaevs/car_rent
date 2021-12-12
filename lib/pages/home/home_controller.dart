@@ -5,7 +5,7 @@ import '../../core.dart';
 class HomeController extends GetxController {
   List<Car> cars = [];
   List<Dealer> dealers = [];
-  Car displayCar;
+  Car? displayCar;
 
   @override
   void onInit() {

@@ -7,7 +7,7 @@ import '../core.dart';
 class MainController extends GetxController {
   final pageCotroller = PageController();
   final animationDuration = const Duration(milliseconds: 350);
-  List<BubbleBottomBarItem> navigationItems;
+  List<BubbleBottomBarItem>? navigationItems;
 
   @override
   void onInit() {
