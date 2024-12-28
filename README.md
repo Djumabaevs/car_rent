@@ -1,4 +1,4 @@
-# car_rent
+# car_rent app
 
 A new Flutter project.
 
